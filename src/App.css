@@ -1,0 +1,111 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.flashcard-container {
+  text-align: center;
+  width: 1000px;
+  height: 500px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(245, 245, 248, 0.7);
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #333;
+}
+
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.next-button {
+  display: inline-flex;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.next-button:hover {
+  background-color: #3e5c40;
+}
+
+
+body {
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  height: 100vh; 
+  margin: 0; 
+  
+  
+  animation: backgroundAnimation 30s infinite;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-image: url('https://media.istockphoto.com/id/1756133188/photo/view-of-fishermen-fishing-on-river-in-thung-mountain-in-tra-linh-cao-bang-province-vietnam.jpg?s=612x612&w=0&k=20&c=_vqyiOZpUydQT6gVj5_7sLknD6lKDVlwrdig4FpqxZE=');
+  }
+  25% {
+    background-image: url('https://i.pinimg.com/736x/a5/fd/7b/a5fd7ba04efc89eeef2f6cf639787f8e.jpg');
+  }
+  50% {
+    background-image: url('https://i.pinimg.com/736x/8f/af/f0/8faff07aaf1c0454126c503c13c1eb06.jpg');
+  }
+  75% {
+    background-image: url('https://i.pinimg.com/736x/ef/c1/1b/efc11bf335817c1c50bc8f5e069ea360.jpg');
+  }
+  100% {
+    background-image: url('https://i.pinimg.com/736x/c4/a0/8a/c4a08aa606e7f447dce470177e14be56.jpg'); /* Loop back to the first image */
+  }
+}
